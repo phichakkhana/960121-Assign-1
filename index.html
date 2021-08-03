@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body onload="onLoad()">
+    
+    <div id="body">
+      <h1>Register Form</h1>
+      <form id="contact" name="contact" onsubmit="return validateFormOnSubmit(this)" action="" method="post">
+        
+
+        <div id="main-error"></div>
+        <div>
+          <label>Firstname : </label>
+          <input placeholder="Firstname" type="text" name="fname" id="fname" tabindex="1" autofocus/>
+          <div id="fname-error"></div>
+        </div>
+        <div>
+          <label>Lastname : </label>
+          <input placeholder="Lastname" type="text" name="lname" id="lname" tabindex="2" autofocus/>
+          <div id="lname-error"></div>
+        </div>
+        <div>
+          <label>Username : </label>
+          <input placeholder="Username" type="text" name="uname" id="uname" tabindex="3" autofocus/>
+          <div id="uname-error"></div>
+        </div>
+        <div>
+          <label>Password : </label>
+          <input placeholder="Password" type="text" name="pwd" id="pwd" tabindex="4" autofocus/>
+          <div id="pwd-error"></div>
+        </div>
+        <div>
+          <label>Email : </label>
+          <input placeholder="Email" type="email" name="email" id="email" tabindex="5" autofocus/>
+          <div id="email-error"></div>
+        </div>
+        <div>
+          <button type="submit" name="submit" id="submit" tabindex="6">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+   
+   
+     <div id="display">
+       <div id="innerdisplay">
+        <h1>Profile</h1>
+        <div id="named"></div>
+        <div id="unamed"></div>
+        <div id="emaild"></div>
+      </div>
+     </div>
+   
+
+    <script src="./form-validate.js"></script>
+  </body>
+</html>
